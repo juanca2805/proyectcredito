@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simuladores"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_dark"
+            android:padding="16dp"
+            android:textStyle="bold" />
+
+        <!-- Descripción del crédito -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crédito Hipotecario en Colombia"
+            android:textSize="27sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <!-- Campo: Valor de la propiedad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* Valor de la propiedad"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etValorPropiedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="100.000.000"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_border"
+            android:padding="10dp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Descripción del valor de la propiedad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El valor de la propiedad no puede ser inferior a $71.000.000"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo: ¿Cuánto necesitas? -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* ¿Cuánto necesitas?"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etCuantoNecesitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="70.000.000"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_border"
+            android:padding="10dp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Descripción del préstamo mínimo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El préstamo mínimo es de $50.000.000..."
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo: Plazo del crédito -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* ¿A qué plazo necesitas el crédito (años)?"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etPlazoCredito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="5"
+            android:inputType="number"
+            android:background="@drawable/edit_text_border"
+            android:padding="10dp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Descripción del plazo del crédito -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Van desde los 5 hasta los 20 años..."
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo: Tasa de interés -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* ¿A qué tasa de interés efectiva anual (TAE)?"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="14.03"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_border"
+            android:padding="10dp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Descripción de la tasa de interés -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esta tasa depende de tu historial crediticio..."
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón de Simular -->
+        <Button
+            android:id="@+id/btnSimular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simular"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp" />
+
+        <!-- Resultado de la simulación -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paga cuotas de $1.629.866 por mes"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
